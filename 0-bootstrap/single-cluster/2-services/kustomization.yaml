@@ -101,11 +101,9 @@ resources:
 #- argocd/instances/ibm-sccm-setup.yaml
 #- argocd/instances/ibm-sccm.yaml
 
-# Required for IBM MQ
-#- argocd/instances/openldap.yaml
-# Required for IBM ACE, IBM MQ
-#- argocd/operators/cert-manager.yaml
-#- argocd/instances/cert-manager-instance.yaml
+- argocd/instances/ibm-sfg-db2-prod.yaml
+- argocd/instances/ibm-sfg-mq-prod.yaml
+- argocd/instances/ibm-sfg-b2bi-prod-setup.yaml
 
 # Sealed Secrets
 - argocd/instances/sealed-secrets.yaml
